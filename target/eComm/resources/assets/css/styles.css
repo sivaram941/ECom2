@@ -1,0 +1,37 @@
+img#logo{
+  max-height:65px;
+  max-width:inherit;
+  margin-right:10px;
+  margin-top:-11px;
+  display:inline-block;
+}
+
+li.dropdown: hover > ul.dropdown-menu{
+  display:block;
+  cursor:pointer;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top{
+  background-color:rgb(127,190,193);
+}
+
+i.glyphicon.glyphicon-align-justify{
+  margin-left:5px;
+}
+
+div.carousel.slide{
+	width:50%;
+	margin: 0 AUTO;
+}
+.carousel-inner{
+	max-height:450px;
+	/* max-height:50%;
+	 */}
+.item{
+	width: 100%; 
+	height: auto;
+}
+.navbar-fixed-bottom{
+	max-height:250px;
+	margin-top:50px;
+}
