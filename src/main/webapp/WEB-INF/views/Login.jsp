@@ -5,27 +5,44 @@
 
 
 
-<c:url var="actionUrl" value="j_spring_security_check" />
 
-<form  method="post" action="${actionUrl }" class="form-horizontal" >
-	<div class="form-group">
-		<label for="Supplier Name" class="col-xs-4 control-label">Email</label>
-		<div class="col-xs-4">
-			<input name="j_username" type ="text"  class="form-control" />
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="code" class="col-xs-4 control-label">Password</label>
-		<div class="col-xs-4">
-			<input name="j_password" id="merocode"  maxlength="15" class="form-control" />
-		</div>
-	</div>
-	<div class="form-group">
-	<label for="code" class="col-xs-4 control-label"></label>	
-		<div class="col-xs-4">
-	   <input type="submit" value="Login" id="btn-update" class="btn btn-primary" >
-		</div>
-	</div>
-</form>
+	<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="<c:url value="/resources/assets/bootstrap/css/bootstrap.min.css"/>">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/fonts/font-awesome.min.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/styles.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/home.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/style.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/Pretty-Footer.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/Pretty-Registration-Form.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/Google-Style-Login.css"/>">
+</head>
+
+<body>
+
+
+    <div class="login-card"><img src="<c:url value="/resources/assets/img/login1.jpg"/>" class="profile-img-card">
+        <p class="profile-name-card"> </p>
+        <c:url var="actionUrl" value="j_spring_security_check" />
+        <form class="form-signin"  method="post" action="${actionUrl }"><span class="reauth-email"> </span>
+            <input class="form-control" name="j_username" type="email" required="" placeholder="Email address" autofocus="" id="inputEmail">
+            <input class="form-control" name="j_password" type="password" required="" placeholder="Password" id="inputPassword">
+            <div class="checkbox">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Remember me</label>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button>
+        </form><a href="#" class="forgot-password">Forgot your password?</a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
 ${error}

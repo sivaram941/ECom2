@@ -12,8 +12,8 @@ h3 {
 }
 <img src="images.jpg" style="width:304px;height:228px;">
 
-<h2>About sports store</h2>
-<p>Welcome to the sports store €”Your destination for the best sports equipment,We provide you the best online selection of sports equipments and other accesories.  
+<h2>About Zoom kart</h2>
+<p>Welcome to the zoom kart store €”Your destination for the best camara & accessories,We provide you the best online selection of camara equipments and other accesories.  
 We believe in providing the best equipment as per customer requirements. we provide online delivery services.</P>
 </body>
 </html>
