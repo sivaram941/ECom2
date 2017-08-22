@@ -2,6 +2,7 @@ package com.spring.dao;
 
 import java.util.List;
 
+
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Projections;
@@ -53,45 +54,46 @@ public class CartDAOImpl implements CartDAO{
 
 		return listCart;
 	}
-
 	
-	
-	/*@Autowired
-	SessionFactory sessionFactory;
-	
-	public CartDAOImpl(SessionFactory sessionFactory)
-	{
-		this.sessionFactory=sessionFactory; 
-		
-	}
-
 	@Transactional
-	public boolean saveCart(Cart cart) {
-		int q=1;
-		cart.setQuantity(q);
-		cart.setSumtotal(q*(cart.getProdprice()));
-		 List<Cart> cartList = (List<Cart>) sessionFactory.getAttribute("cart");
-			
-		sessionFactory.getCurrentSession().saveOrUpdate(cart);
-		return true;
+	public void editCart(int id) {
+		sessionFactory.getCurrentSession().saveOrUpdate(id);
+		
+		
+	}
+	
+	@Transactional
+	public void deleteCart(int id) {
+		// TODO Auto-generated method stub
+
+		sessionFactory.getCurrentSession().delete(getCart(id));
 	}
 
-	public List getAllCartDetails() {
+	@SuppressWarnings("unchecked")
+	@Transactional
+	public Cart getCart(int id) {
+		
+		String hql = "from"+" Cart"+" where id="+id;
+		@SuppressWarnings("rawtypes")
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		List<Cart> list = (List<Cart>) query.list();
+		if (list!= null && !list.isEmpty()) {
+			return list.get(0);
+		}
+		return null;
+		//return (Cart)sessionFactory.getCurrentSession().get(Cart.class, id);
+	}
+	public List getAllCart() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public List<Cart> list() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List getCartByProduct(int Productid) {
+@Transactional	
+public List getCartByUser(int userid) {
 		
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().createQuery("from Product where id="+Productid).list();
+		return sessionFactory.getCurrentSession().createQuery("from Cart where userid="+userid).list();
 	}
 
 	
-
-*/}
+}	

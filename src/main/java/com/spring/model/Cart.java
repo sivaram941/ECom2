@@ -27,6 +27,15 @@ public class Cart {
 	private double subTotal;
 	private int productid;
 	
+	/*private int cod;
+	public int getCod() {
+		return cod;
+	}
+	public void setCod(int charges) {
+		this.cod = charges;
+	}
+	int charges=99;
+	*/
 	public int getProductid() {
 		return productid;
 	}
