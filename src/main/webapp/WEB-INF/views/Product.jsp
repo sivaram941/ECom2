@@ -8,8 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product1</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/bootstrap/css/bootstrap.min.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/styles.css"/>">
 </head>
 
 <body>
@@ -126,10 +126,10 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-default" type="button">Add </button>
-                    <button class="btn btn-default" type="button">Edit </button>
-                    <button class="btn btn-default" type="button">Delete </button>
-                    <button class="btn btn-default" type="button">Search </button>
+                    <button class="btn btn-default" name="action" type="submit">Add </button>
+                    <button class="btn btn-default" name="action" type="submit">Edit </button>
+                    <button class="btn btn-default" name="action" type="submit">Delete </button>
+                    <button class="btn btn-default" name="action" type="submit">Search </button>
                 </div>
             </div>
         </div>
