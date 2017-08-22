@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">ZOOM KART</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index"><img src="resources/assets/img/logo.png" width="50px" height="50px"/>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -48,6 +48,7 @@
         </div>
     </nav>
     <div class="jumbotron hero">
+    <h2 class="text-center"> ZOOM KART</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-push-7 phone-preview">
@@ -119,10 +120,10 @@
         <footer>
             <div class="row">
                 <div class="col-md-4 col-sm-6 footer-navigation">
-                    <h3><a href="#">Company<span> </span></a></h3>
+                    <h3><a href="#">ZOOM KART<span> </span></a></h3>
                     <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
                     <p
-                    class="company-name">Company Name © 2015 </p>
+                    class="company-name">ZOOM KART © 2015 </p>
                 </div>
                 <div class="col-md-4 col-sm-6 footer-contacts">
                     <div><span class="fa fa-map-marker footer-contacts-icon"> </span>

@@ -27,7 +27,7 @@
 <body>
 
 
-    <div class="login-card"><img src="<c:url value="/resources/assets/img/login1.jpg"/>" class="profile-img-card">
+    <div class="login-card"><img src="<c:url value="/resources/assets/img/logo.png"/>" class="profile-img-card">
         <p class="profile-name-card"> </p>
         <c:url var="actionUrl" value="j_spring_security_check" />
         <form class="form-signin"  method="post" action="${actionUrl }"><span class="reauth-email"> </span>
