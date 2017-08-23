@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+
 
 <html>
 
@@ -27,6 +29,11 @@
                     <li role="presentation"><a href="category">Category </a></li>
                     <li role="presentation"><a href="supplier">Supplier </a></li>
                      <li role="presentation"><a href="product">Product </a></li>
+                        <sec:authorize access="isAuthenticated()">
+                    <li role="presentation" class="box"><a href="cart"></a></li>
+                    <li class="box"> <a href="<c:url value="j_spring_security_logout" />">Logout</a></li>
+                              </sec:authorize>
+              
                 </ul>
             </div>
         </div>

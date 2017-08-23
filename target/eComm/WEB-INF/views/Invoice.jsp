@@ -13,7 +13,6 @@
  <link rel="stylesheet" href="<c:url value="/resources/assets/bootstrap/css/bootstrap.min.css"/>">
  <link rel="stylesheet" href="<c:url value="/resources/assets/css/styles.css"/>">
  <link rel="stylesheet" href="<c:url value="resources/assets/css/Google-Style-Login.css"/>">
- <link rel="stylesheet" href="<c:url value="resources/assets/css/Pretty-Footer.css"/>">
  <link rel="stylesheet" href="<c:url value="resources/assets/css/Pretty-Registration-Form.css"/>">
     
 </head>
@@ -68,16 +67,6 @@
             <div class="row">
                 <div class="col-md-4">
                     <label>email:${user.email} </label>
-                </div>
-            </div>
-            <div class="row">
-    	            <div class="col-md-4">
-                    <label>contact no:${user.contact_number} </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <label>Shipping Address:${user.address} </label>
                 </div>
             </div>
             <hr>
@@ -140,10 +129,7 @@
      	</div>
  </div>
  
- <div 
-   <c:import url="/WEB-INF/views/footer.jsp" />>
-</div>
- 
+
  	<script src="<c:url value="/resources/assets/js/print.js"/>"></script>
     <script src="<c:url value="/resources/assets/js/jquery.min.js"/>"></script>
     <script src="<c:url value="/resources/assets/bootstrap/js/bootstrap.min.js"/>"></script>

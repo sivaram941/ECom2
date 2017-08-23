@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+    <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
    
     <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.util.List"%>
@@ -29,6 +30,10 @@
                     <li role="presentation"><a href="#">Supplier</a></li>
                     <li role="presentation"><a href="#">Product </a></li>
                 </ul>
+                  <sec:authorize access="isAuthenticated()">
+                    <li role="presentation" class="box"><a href="cart">Cart </a></li>
+                    <li class="box"> <a href="<c:url value="j_spring_security_logout" />">Logout</a></li>
+                              </sec:authorize>
             </div>
         </div>
     </nav>
