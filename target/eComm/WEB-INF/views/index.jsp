@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">ZOOM KART</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index"><img src="resources/assets/img/logo.png" width="50px" height="40px"/>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -48,6 +48,7 @@
         </div>
     </nav>
     <div class="jumbotron hero">
+    <h2 class="text-center"> ZOOM KART</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-push-7 phone-preview">
@@ -88,7 +89,7 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="thumbnail"><img src="assets/img/canon.jpg">
+                    <div class="thumbnail"><img src="<c:url value="/resources/assets/img/canon.jpg"/>">
                         <div class="caption">
                             <h3>Canon EOS 1300D</h3>
                             <p><a href="http://www.amazon.in/Canon/b/ref=w_bl_hsx_s_ce_web_7002571031?ie=UTF8&amp;node=7002571031&amp;field-lbr_brands_browse-bin=Canon">Canon:</a>Canon EOS 1300D 18MP Digital SLR Camera (Black) with 18-55mm ISII Lens, 16GB
@@ -97,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="thumbnail"><img src="assets/img/nikon.jpg">
+                    <div class="thumbnail"><img src="<c:url value="/resources/assets/img/nikon.jpg"/>">
                         <div class="caption">
                             <h3>Nikon D3300 </h3>
                             <p>Nikon D3300 24.2MP Digital SLR (Black) + AF-P DX NIKKOR 18-55mm f/3.5-5.6G VR Lens + AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR Lens + Memory Card + Camera Bag </p>
@@ -105,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="thumbnail"><img src="assets/img/sony1.jpg">
+                    <div class="thumbnail"><img src="<c:url value="/resources/assets/img/sony1.jpg"/>">
                         <div class="caption">
                             <h3>Sony Cybershot HX350</h3>
                             <p>Sony Cybershot DSC-HX350 20.4MP Compact Digital Camera with 50x Optical Zoom (Black).</p>
@@ -115,33 +116,14 @@
             </div>
         </div>
     </div>
-    <section class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Fantastic Features</h2></div>
-                <div class="col-md-6">
-                    <div class="row icon-features">
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
-                            <p>Cloud-ready </p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
-                            <p>Saves You Money</p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
-                            <p>Fire Proof</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
         <footer>
             <div class="row">
                 <div class="col-md-4 col-sm-6 footer-navigation">
-                    <h3><a href="#">Company<span> </span></a></h3>
+                    <h3><a href="#">ZOOM KART<span> </span></a></h3>
                     <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
                     <p
-                    class="company-name">Company Name © 2015 </p>
+                    class="company-name">ZOOM KART © 2015 </p>
                 </div>
                 <div class="col-md-4 col-sm-6 footer-contacts">
                     <div><span class="fa fa-map-marker footer-contacts-icon"> </span>

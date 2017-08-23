@@ -7,12 +7,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
+@Component
 @Entity
 @Table(name="Product_details")
 public class Product implements Serializable{
@@ -24,8 +27,10 @@ public class Product implements Serializable{
 	private int price,stock;
 	private int Catid;
 	private int Supid;
-	@Transient
-	private MultipartFile image;
+	
+	@Lob
+	private byte image[];
+	
 	
 	
 	
@@ -42,6 +47,12 @@ public class Product implements Serializable{
 	
 	
 
+	public byte[] getImage() {
+		return image;
+	}
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
 	public int getCatid() {
 		return Catid;
 	}
@@ -99,13 +110,7 @@ public class Product implements Serializable{
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
-	public MultipartFile getImage() {
-		return image;
-	}
-	public void setImage(MultipartFile image) {
-		this.image = image;
-	}
-
+	
 
 	
 }

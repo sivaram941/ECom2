@@ -8,8 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product1</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/bootstrap/css/bootstrap.min.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/assets/css/styles.css"/>">
 </head>
 
 <body>
@@ -126,15 +126,50 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-default" type="button">Add </button>
-                    <button class="btn btn-default" type="button">Edit </button>
-                    <button class="btn btn-default" type="button">Delete </button>
-                    <button class="btn btn-default" type="button">Search </button>
+                    <button class="btn btn-default" name="action" type="submit">Add </button>
+                    <button class="btn btn-default" name="action" type="submit">Edit </button>
+                    <button class="btn btn-default" name="action" type="submit">Delete </button>
+                    <button class="btn btn-default" name="action" type="submit">Search </button>
                 </div>
             </div>
         </div>
     </div>
     </form:form>
+     <br>
+<div class="container">
+        <div class="well">     
+		<table class ="table table-hover ">
+		<thead>
+		<tr>
+	<th>ID</th>
+	<th>Product name</th>
+	<th>Product desc</th>
+	<th>product price</th>
+	<th>product stock</th>
+	<th>image</th>
+</tr>
+</thead>	
+<tbody>	
+<c:forEach items="${productList}" var="product">
+		<tr>
+			<td>${product.id}</td>
+			<td>${product.product_name}</td>
+			<td>${product.description}</td>
+			<td>${product.price}</td>
+			<td>${product.stock}</td>
+			<td><div class="thumbnail">
+			<img height="200px" width="200px" atl="${product.id}"
+			src="<c:url value="/resources/images/${product.id}.jpg"></c:url>">
+			</div></td>
+			
+			
+		</tr>
+	</c:forEach>
+	</tbody>	
+	
+</table>
+</div>
+</div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
