@@ -20,7 +20,7 @@ import com.spring.dao.UserDAO;
 import com.spring.model.Card;
 import com.spring.model.Cart;
 import com.spring.model.Users;
-import com.sun.xml.internal.org.jvnet.staxex.NamespaceContextEx.Binding;
+
 
 @Controller
 public class CheckOutController {
