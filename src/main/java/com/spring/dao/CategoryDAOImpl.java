@@ -29,20 +29,20 @@ public class CategoryDAOImpl implements CategoryDAO{
 		sessionFactory.getCurrentSession().saveOrUpdate(category);
 		return true;
 	}
-
+	@Transactional 
 	public void add(Category category) {
 		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().save(category);
 		
 	}
-
+	@Transactional 
 	public void edit(Category category) {
 		// TODO Auto-generated method stub
 		
 		sessionFactory.getCurrentSession().update(category);
 		
 	}
-
+	@Transactional 
 	public void delete(int Catid) {
 		// TODO Auto-generated method stub
 
@@ -53,7 +53,7 @@ public class CategoryDAOImpl implements CategoryDAO{
 		// TODO Auto-generated method stub
 		return (Category)sessionFactory.getCurrentSession().get(Category.class, Catid);
 	}
-
+	@Transactional 
 	public List getAllCategory() {
 		// TODO Auto-generated method stub
 		return sessionFactory.getCurrentSession().createQuery("from Category").list();

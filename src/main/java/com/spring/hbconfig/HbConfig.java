@@ -16,6 +16,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import com.spring.dao.CategoryDAO;
+import com.spring.dao.CategoryDAOImpl;
+import com.spring.dao.SupplierDAO;
+import com.spring.dao.SupplierDAOImpl;
+import com.spring.dao.UserDAO;
+import com.spring.dao.UserDAOImpl;
 import com.spring.model.Card;
 import com.spring.model.Cart;
 import com.spring.model.Category;
@@ -78,9 +84,23 @@ public class HbConfig {
 	}
 
 	
-	/*@Autowired
+	@Autowired
 	@Bean(name = "userDAO")
 	public UserDAO getUserDetailsDAO(SessionFactory sessionFactory) {
 			return new UserDAOImpl(sessionFactory);
-	}*/
+	}
+	
+
+	@Autowired
+	@Bean(name = "supplierDAO")
+	public SupplierDAO getSupplierDetailsDAO(SessionFactory sessionFactory) {
+			return new SupplierDAOImpl(sessionFactory);
+	}
+	
+	@Autowired
+	@Bean(name = "categoryDAO")
+	public CategoryDAO getCategoryDetailsDAO(SessionFactory sessionFactory) {
+			return new CategoryDAOImpl(sessionFactory);
+	}
+	
 }
