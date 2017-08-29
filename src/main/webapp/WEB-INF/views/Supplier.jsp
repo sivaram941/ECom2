@@ -70,9 +70,11 @@
             </div>
         </div>
     </div>
+       <div>
+   <c:import url="/WEB-INF/views/Footer.jsp" />>
+</div>
     </form:form>
     <script src="<c:url value="resources/assets/js/jquery.min.js"/>"></script>
     <script src="<c:url value="resources/assets/bootstrap/js/bootstrap.min.js"/>"></script>
-</body>
-
+</body> 
 </html>

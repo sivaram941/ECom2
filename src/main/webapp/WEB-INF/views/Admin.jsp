@@ -38,7 +38,9 @@
             </div>
         </div>
     </nav>
+      <div>
+   <c:import url="/WEB-INF/views/Footer.jsp" />>
+</div>
    
 </body>
-
 </html>
